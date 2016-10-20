@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+</head>
+<body>
+
+<div style="text-align: center;">
+    <h1>Welcome to Dynamic Web Project</h1>
+</div>
+
+<form action="hello.do" method="GET">
+    <table width="100%"><tr valign="top"><td>
+
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="txt_first_name" /></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="txt_last_name" /></td>
+            </tr>
+        </table>
+
+    </td><td>
+
+        <p><b>Select your gender please</b></p>
+        <p><input type="radio" name="gender" value="male" title="Male" />Male<br>
+        <input type="radio" name="gender" value="female" title="Female" />Female</p>
+
+        <p><b>Choose your achievments please</b></p>
+        <p><input type="checkbox" name="achievments" value="married" title="Married"/>Married<br>
+        <input type="checkbox" name="achievments" value="reach" title="Reach" />Reach<br>
+        <input type="checkbox" name="achievments" value="enlightened" title="Enlightened" />Enlightened :)</p>
+
+    </td><td>
+
+        <p><b>Select your roles please</b></p>
+        <p><select size="12" multiple name="roles" title="Roles">
+            <optgroup label="Social">
+                <option>Leader</option>
+                <option>Friend</option>
+                <option>Beholder</option>
+            </optgroup>
+            <optgroup label="Family">
+                <option>Parent</option>
+                <option>Spouse</option>
+                <option>Child</option>
+            </optgroup>
+            <optgroup label="Professional">
+                <option>Worker</option>
+                <option>Searcher</option>
+                <option>Idler</option>
+            </optgroup>
+        </select></p>
+
+    </td></tr></table>
+
+    <input type="submit" value="Go To Hello Page" />
+</form>
+
+<form action="cookie.set" method="POST">
+    <input type="submit" value="Set Cookies" />
+</form>
+
+<form action="cookie.show" method="POST">
+    <input type="submit" value="Show Cookies" />
+</form>
+
+</body>
+</html>
